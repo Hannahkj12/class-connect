@@ -10,27 +10,6 @@ export function Header() {
           <span className="text-xl font-bold text-foreground">ClassConnect</span>
         </div>
 
-        <nav className="hidden md:flex items-center space-x-6">
-          <a
-            href="#how-it-works"
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-          >
-            How it Works
-          </a>
-          <a
-            href="#testimonials"
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Testimonials
-          </a>
-          <a
-            href="#early-access"
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Get Access
-          </a>
-        </nav>
-
         <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">Join Waitlist</Button>
       </div>
     </header>
