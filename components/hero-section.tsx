@@ -3,14 +3,19 @@ import { ArrowRight } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section className="relative py-20 lg:py-32 overflow-hidden">
-      <div className="container relative">
+    <section
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url(/images/students-studying-together.jpg)" }}
+    >
+      <div className="absolute inset-0 bg-black/50 z-10"></div>
+
+      <div className="container relative z-20 pt-16">
         <div className="mx-auto max-w-4xl text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl text-balance">
-            Find Your Perfect <span className="text-primary">Study Partner</span> in Every Class
+          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl text-balance">
+            Find Your Perfect <span className="text-emerald-400">Study Partner</span> in Every Class
           </h1>
 
-          <p className="mt-6 text-lg leading-8 text-muted-foreground max-w-2xl mx-auto text-pretty">
+          <p className="mt-6 text-lg leading-8 text-gray-200 max-w-2xl mx-auto text-pretty">
             Connect with classmates and tutors at your university based on your actual class schedule. Form study
             groups, find academic support, and excel together.
           </p>
@@ -21,13 +26,6 @@ export function HeroSection() {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
-        </div>
-      </div>
-
-      {/* Background decoration */}
-      <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute left-1/2 top-0 -translate-x-1/2 blur-3xl opacity-20">
-          <div className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-primary to-secondary" />
         </div>
       </div>
     </section>
