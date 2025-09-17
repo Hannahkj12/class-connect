@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react"
 export function HeroSection() {
   return (
     <section
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
+      className="relative h-[80vh] flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url(/images/students-studying-together.jpg)" }}
     >
       <div className="absolute inset-0 bg-black/50 z-10"></div>
