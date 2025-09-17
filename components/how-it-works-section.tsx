@@ -26,13 +26,6 @@ export function HowItWorksSection() {
   return (
     <section id="how-it-works" className="py-20 bg-muted/30">
       <div className="container">
-        <div className="mx-auto max-w-2xl text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">How ClassConnect Works</h2>
-          <p className="mt-4 text-lg text-muted-foreground">
-            Getting connected with your classmates is simple and takes just minutes
-          </p>
-        </div>
-
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {steps.map((step, index) => (
             <Card key={index} className="relative border-0 shadow-lg bg-card">
